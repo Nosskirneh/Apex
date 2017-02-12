@@ -8,7 +8,7 @@ ifeq ($(DEBUG), 0)
 	PACKAGE_VERSION=$(THEOS_PACKAGE_BASE_VERSION)
 endif
 
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = Apex
 Apex_FILES :=  $(wildcard *.*m) $(wildcard *.x)
@@ -28,7 +28,7 @@ endif
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 SUBPROJECTS += SBSHook
-SUBPROJECTS += PrefBundle
+#SUBPROJECTS += PrefBundle
 
 before-all::
 	$(ECHO_NOTHING)python ./VersionUpdate.py $(THEOS_PACKAGE_BASE_VERSION)$(ECHO_END)

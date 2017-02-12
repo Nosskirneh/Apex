@@ -1,0 +1,9 @@
+Package: com.a3tweaks.apex2
+Name: Apex 2
+Depends: mobilesubstrate
+Version: 1.6-24+debug
+Architecture: iphoneos-arm
+Description: Grouping apps has never been so fun.
+Maintainer: Andreas Henriksson
+Author: A3Tweaks
+Section: Tweaks
